@@ -5,6 +5,14 @@ import bookRoutes from './routes/bookRoutes.js'
 import cors from 'cors'
 const app = Express();
 
+// for deploying purpose
+app.use(cors(
+    {
+        origin : [],
+        methods : ["GET", "POST", "PUT", "DELETE", "PATCH"],
+        credentials : true
+    }
+    ));
 //  middleware for parsing req body
 app.use(Express.json())
 
