@@ -8,7 +8,7 @@ const app = Express();
 // for deploying purpose
 app.use(cors(
     {
-        origin : [],
+        origin : ["https://bookfrontend-five.vercel.app"],
         methods : ["GET", "POST", "PUT", "DELETE", "PATCH"],
         credentials : true
     }
